@@ -122,6 +122,23 @@ nav .container div{
     /* test */
 }
 
+/* benefits */
+.benefits{
+    display: flex;
+    flex-direction: column;
+
+    gap: 35px;
+    padding: 70px 0;
+}
+
+.benefit{
+    height: 400px;
+    /* test */
+
+    background-color: white;
+}
+
+
 /* media queries */
 /* tablet view */
 @media screen and (min-width:768px) {
@@ -147,8 +164,17 @@ nav .container div{
     /* testimonials */
     .testimonial{
         flex-direction: row;
-        align-items: center;
-        
+        align-items: center;   
+    }
+
+    /* benefits */
+    .benefits{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .benefit{
+        width: calc(100% / 2 - 35px / 2);
     }
 }
 
@@ -179,5 +205,10 @@ nav .container div{
     .plan > div{
         width: 450px;
         /* test */
+    }
+
+    /* benefit */
+    .benefit{
+        width: calc(100% / 3 - 70px / 3);
     }
 }

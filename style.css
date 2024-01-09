@@ -154,6 +154,24 @@ nav .container div{
     /* test */
 }
 
+/* pricing */
+.pricing{
+    height: 500px;
+    /* test */
+
+    text-align: center;
+}
+
+/* footer */
+footer{
+    height: 200px;
+    /* test */
+
+    padding: 40px 0;
+    text-align: center;
+    color: white;
+    background-color: #333333;
+}
 
 /* media queries */
 /* tablet view */

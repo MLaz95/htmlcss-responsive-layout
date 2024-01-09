@@ -69,7 +69,8 @@ nav .container div{
 .plan{
     display: flex;
     flex-direction: column;
-
+    gap: 35px;
+    padding: 60px 0;
 }
 
 .plan > div{
@@ -91,6 +92,35 @@ nav .container div{
     color: black;
 }
 
+/* testimonials */
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    padding: 65px 0;
+}
+
+.testimonials > div{
+    height: 300px;
+    border: dashed 1px red;
+    /* test */
+}
+
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    background-color: #9792E4;
+
+    align-items: center;    /*test*/
+}
+
+.testimonial div{
+    width: 50%;
+    height: 50%;
+    border: dashed 1px black;
+    /* test */
+}
 
 /* media queries */
 /* tablet view */
@@ -99,6 +129,7 @@ nav .container div{
         max-width: 745px;
     }
 
+    /* features */
     .cards{
         flex-direction: row;
         flex-wrap: wrap;
@@ -111,6 +142,13 @@ nav .container div{
 
     .card:first-child{
         width: calc(100% / 3 * 2 - 25px / 2);
+    }
+
+    /* testimonials */
+    .testimonial{
+        flex-direction: row;
+        align-items: center;
+        
     }
 }
 

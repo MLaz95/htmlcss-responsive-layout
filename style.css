@@ -29,3 +29,28 @@ nav .container div{
     /* test */
 }
 /* end navbar */
+
+/* features */
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+    margin-top: 50px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.card{
+    height: 350px;
+    width: 100%;
+    /* test */
+
+    background-color: #B5DDFF;
+}
+
+.card div{
+    height: 50%;
+    border: dashed 1px red;
+}

@@ -53,4 +53,49 @@ nav .container div{
 .card div{
     height: 50%;
     border: dashed 1px red;
+    /* test */
+}
+
+.card:first-child{
+    display: flex;
+    flex-direction: column;
+}
+
+/* media queries */
+/* tablet view */
+@media screen and (min-width:768px) {
+    .container{
+        max-width: 745px;
+    }
+
+    .cards{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card{
+        width: calc(100% / 3 - 25px);
+    }
+
+    .card:first-child{
+        width: calc(100% / 3 * 2 - 25px / 2);
+    }
+}
+
+/* desktop view */
+@media screen and (min-width:1200px) {
+    .container{
+        max-width: 1140px;
+    }
+
+    .card:first-child{
+        flex-direction: row;
+    }
+
+    .card:first-child div{
+        height: 100%;
+        width: 50%;
+        /* test */
+    }
 }

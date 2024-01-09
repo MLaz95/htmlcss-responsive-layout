@@ -138,6 +138,22 @@ nav .container div{
     background-color: white;
 }
 
+/* about us */
+.about-us{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+
+    padding: 80px 0;
+}
+
+.about-us > div{
+    height: 300px;
+    text-align: center;
+    border: dashed 1px red;
+    /* test */
+}
+
 
 /* media queries */
 /* tablet view */
@@ -175,6 +191,17 @@ nav .container div{
 
     .benefit{
         width: calc(100% / 2 - 35px / 2);
+    }
+
+    /* about us */
+    .about-us{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .about-us > div{
+        width: 50%;
+        /* test */
     }
 }
 

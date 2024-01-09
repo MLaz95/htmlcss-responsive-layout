@@ -4,3 +4,28 @@
     box-sizing: border-box;
 }
 /* reset */
+
+/* general rules */
+.container{
+    max-width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* navbar */
+nav{
+    background-color: #0084FD;
+}
+
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .container div{
+    padding: 25px;
+    background-color: orange;
+    /* test */
+}
+/* end navbar */

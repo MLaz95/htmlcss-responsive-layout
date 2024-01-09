@@ -6,6 +6,10 @@
 /* reset */
 
 /* general rules */
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+
 .container{
     max-width: 310px;
     margin-left: auto;
@@ -15,18 +19,34 @@
 /* navbar */
 nav{
     background-color: #0084FD;
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+main{
+    overflow-y: scroll;
+    height: calc(100vh - 79px); /*navbar offset*/
+    margin-top: 79px;
+}
+
+nav .fa-bars{
+    font-size: 25px;
 }
 
 nav .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    padding: 15px 0 20px 0;
 }
 
-nav .container div{
-    padding: 25px;
-    background-color: orange;
-    /* test */
+.desktop-nav{
+    display: none;
 }
 /* end navbar */
 
@@ -227,6 +247,40 @@ footer{
 @media screen and (min-width:1200px) {
     .container{
         max-width: 1140px;
+    }
+
+    /* nav */
+    nav .fa-bars{
+        display: none;
+    }
+
+    nav .desktop-nav{
+        display: flex;
+        align-items: baseline;
+        gap: 30px;
+
+        list-style: none;
+    }
+
+    .desktop-nav a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .desktop-nav a:hover{
+        text-decoration: underline;
+    }
+
+    .desktop-nav .button{
+        padding: 10px 20px;
+        border-radius: 25px;
+        background-color: white;
+        color: black;
+    }
+
+    .desktop-nav .button:hover{
+        cursor: pointer;
+        box-shadow: 0px 0px 10px;
     }
 
     /* features */

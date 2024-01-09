@@ -2,6 +2,12 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
+    <!-- google font PT Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -9,83 +15,92 @@
 <body>
     <nav>
         <div class="container">
-            <div>Logo</div>
-            <div>Menu</div>
+            <div><img src="./img/logo.png" alt=""></div>
+            <div><i class="fa fa-bars" aria-hidden="true"></i></div>
+            <ul class="desktop-nav">
+                <li><a href="#">Planning</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">About Us</a></li>
+                <li class="button">Get Started</li>
+            </ul>
         </div>
     </nav>
 
-    <!-- features -->
-    <section class="cards container">
-        <div class="card">
-            <div>Text</div>
-            <div>Image</div>
-        </div>
-        <div class="card">CONTENT</div>
-        <div class="card">CONTENT</div>
-        <div class="card">CONTENT</div>
-        <div class="card">CONTENT</div>
-    </section>
+    <main>
+        <!-- features -->
+        <section class="cards container">
+            <div class="card">
+                <div>Text</div>
+                <div>Image</div>
+            </div>
+            <div class="card">CONTENT</div>
+            <div class="card">CONTENT</div>
+            <div class="card">CONTENT</div>
+            <div class="card">CONTENT</div>
+        </section>
 
-    <!-- planning -->
-    <section class="back-purple">
-        <div class="plan container">
-            <div>
+        <!-- planning -->
+        <section class="back-purple">
+            <div class="plan container">
+                <div>
+                    <div>IMAGE</div>
+                    <div>CONTENT</div>
+                </div>
+                <div>
+                    <div>IMAGE</div>
+                    <div>CONTENT</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- testimonials -->
+        <section class="testimonials container">
+            <div>CONTENT</div>
+            <div class="testimonial">
                 <div>IMAGE</div>
                 <div>CONTENT</div>
             </div>
-            <div>
+            <div class="testimonial">
                 <div>IMAGE</div>
                 <div>CONTENT</div>
             </div>
-        </div>
-    </section>
+            <div class="testimonial">
+                <div>IMAGE</div>
+                <div>CONTENT</div>
+            </div>
+        </section>
 
-    <!-- testimonials -->
-    <section class="testimonials container">
-        <div>CONTENT</div>
-        <div class="testimonial">
-            <div>IMAGE</div>
-            <div>CONTENT</div>
-        </div>
-        <div class="testimonial">
-            <div>IMAGE</div>
-            <div>CONTENT</div>
-        </div>
-        <div class="testimonial">
-            <div>IMAGE</div>
-            <div>CONTENT</div>
-        </div>
-    </section>
+        <!-- benefits -->
+        <section class="back-purple">
+            <div class="benefits container">
+                <div class="benefit">01</div>
+                <div class="benefit">02</div>
+                <div class="benefit">03</div>
+                <div class="benefit">04</div>
+                <div class="benefit">05</div>
+                <div class="benefit">06</div>
+            </div>
+        </section>
 
-    <!-- benefits -->
-    <section class="back-purple">
-        <div class="benefits container">
-            <div class="benefit">01</div>
-            <div class="benefit">02</div>
-            <div class="benefit">03</div>
-            <div class="benefit">04</div>
-            <div class="benefit">05</div>
-            <div class="benefit">06</div>
-        </div>
-    </section>
+        <!-- about us -->
+        <section class="about-us container">
+            <div>ABOUT US</div>
+            <div>QUOTE</div>
+        </section>
 
-    <!-- about us -->
-    <section class="about-us container">
-        <div>ABOUT US</div>
-        <div>QUOTE</div>
-    </section>
+        <!-- pricing -->
+        <section class="back-purple">
+            <div class="pricing container">
+                CONTENT
+            </div>
 
-    <!-- pricing -->
-    <section class="back-purple">
-        <div class="pricing container">
-            CONTENT
-        </div>
+        </section>
 
-    </section>
-
-    <footer>
-        <div>text</div>
-        <div>other text</div>
-    </footer>
+        <footer>
+            <div>text</div>
+            <div>other text</div>
+        </footer>
+    </main>
 </body>
 </html>

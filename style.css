@@ -314,22 +314,64 @@ nav .container{
 }
 
 /* pricing */
-.pricing{
-    height: 500px;
-    /* test */
+.bottom-container{
+    max-width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.pricing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    padding: 60px 0;
     text-align: center;
+    color: white;
+}
+
+.pricing h2{
+    font-size: 29px;
+}
+
+.pricing strong{
+    font-size: 55px;
+    font-weight: bold;
+    color: #FDC15F;
+}
+
+.pricing a{
+    color: white;
+}
+
+.pricing .button{
+    width: 265px;
+    padding: 15px 0;
+    border-radius: 30px;
+
+    font-weight: bold;
+    color: #9792E4;
+    background-color: white;
 }
 
 /* footer */
 footer{
-    height: 200px;
-    /* test */
-
     padding: 40px 0;
+    font-size: 13px;
+    line-height: normal;
     text-align: center;
     color: white;
     background-color: #333333;
+}
+
+.ft-links{
+    padding-top: 60px;
+}
+
+.ft-links a{
+    color: #9792E4;
 }
 
 /* media queries */
@@ -338,6 +380,8 @@ footer{
     .container{
         max-width: 745px;
     }
+
+    
 
     /* features */
     .cards{
@@ -392,6 +436,19 @@ footer{
     /* column becomes sized based on the picture, quote-info can grow with additional space */
     .about-quote{
         max-width: 200px;
+    }
+
+    /* pricing */
+    .bottom-container{
+        max-width: 557px;
+    }
+
+    .pricing{
+        gap: 50px;
+    }
+
+    .pricing h2{
+        font-size: 47px;
     }
 }
 

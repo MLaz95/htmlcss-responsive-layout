@@ -31,7 +31,7 @@ main{
     overflow-y: auto;
     height: calc(100vh - 79px); /*navbar offset*/
     margin-top: 79px;
-    line-height: 1.8em;
+    line-height: 2em;
 }
 
 nav .fa-bars{
@@ -227,8 +227,6 @@ nav .container{
 }
 
 .benefit{
-    height: 400px;
-    /* test */
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -263,16 +261,56 @@ nav .container{
 .about-us{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 45px;
 
     padding: 80px 0;
 }
 
-.about-us > div{
-    height: 300px;
+.about-us h2{
+   font-size: 40px;
+   font-weight: bold;
+   color: #9792E4;
+}
+
+.about-info{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.about-quote{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+/* positions quotation marks in upper right pic corner */
+.about-pic{
+    position: relative;
+}
+
+.about-pic .fa-solid{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 50px;
+    color: #9792E4;
+}
+
+.about-quote strong{
+    font-size: 28px;
+    color: #9792E4;
+}
+
+.about-quote .button{
+    width: 190px;
+    padding: 3px 0;
+    border-radius: 25px;
     text-align: center;
-    border: dashed 1px red;
-    /* test */
+    color: white;
+    background-color: #9792E4;
 }
 
 /* pricing */
@@ -346,11 +384,14 @@ footer{
     .about-us{
         flex-direction: row;
         justify-content: center;
+        gap: 90px;
+
+        padding: 80px 0 150px;
     }
 
-    .about-us > div{
-        width: 50%;
-        /* test */
+    /* column becomes sized based on the picture, quote-info can grow with additional space */
+    .about-quote{
+        max-width: 200px;
     }
 }
 

@@ -63,12 +63,18 @@ nav .container{
 }
 
 .card{
-    /* height: 350px; */
-    width: 100%;
-    /* test */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
     border-radius: 15px;
-    padding: 40px 30px 0;
+    padding: 30px;
     background-color: #B5DDFF;
+    line-height: 1.8em;
+}
+
+.card:first-child{
+    padding: 40px 30px 0;
 }
 
 .card .intro-text{
@@ -76,7 +82,7 @@ nav .container{
     flex-direction: column;
     gap: 30px;
     text-align: left;
-    line-height: 1.5em;
+    
 }
 
 .card strong{
@@ -85,7 +91,7 @@ nav .container{
 }
 
 .card .button{
-    width: 210px;
+    max-width: 210px;
     padding: 10px;
 
     text-align: center;
@@ -100,19 +106,13 @@ nav .container{
 }
 
 .card img{
-    width: 250px;
+    max-width: 250px;
+    max-height: 270px;
 }
 
-.card div{
-    /* height: 50%; */
-    /* border: dashed 1px red; */
-    /* test */
-}
-
-.card:first-child{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+.card .fa-solid{
+    color: #0084FD;
+    font-size: 80px;
 }
 
 /* planning */
@@ -238,7 +238,8 @@ footer{
     .cards{
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: stretch;
     }
 
     .card{
@@ -246,7 +247,7 @@ footer{
     }
 
     .card:first-child{
-        width: calc(100% / 3 * 2 - 25px / 2);
+        width: calc(100% / 3 * 2 - 25px);
     }
 
     /* testimonials */
@@ -320,6 +321,10 @@ footer{
     /* features */
     .card:first-child{
         flex-direction: row;
+    }
+
+    .card:first-child img{
+        align-self: flex-end;
     }
 
     .card:first-child div{

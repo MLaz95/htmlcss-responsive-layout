@@ -189,25 +189,38 @@ nav .container{
     padding: 65px 0;
 }
 
-.testimonials > div{
-    height: 300px;
-    border: dashed 1px red;
-    /* test */
+.testimonials strong{
+    display: block;
+    padding: 40px 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: #9792E4;
 }
 
 .testimonial{
     display: flex;
     flex-direction: column;
-    background-color: #9792E4;
+    align-items: center;
+    gap: 25px;
 
-    align-items: center;    /*test*/
+    padding: 30px 20px;
+    border-radius: 25px;
+
+    color: white;
+    background-color: #9792E4;
 }
 
-.testimonial div{
-    width: 50%;
-    height: 50%;
-    border: dashed 1px black;
-    /* test */
+.profile-pic{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-name{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 25px;
 }
 
 /* benefits */

@@ -95,6 +95,10 @@ nav .container{
     color: white;
 }
 
+.card .button .fa-brands{
+    padding: 0 5px;
+}
+
 .card img{
     width: 250px;
 }

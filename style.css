@@ -31,6 +31,7 @@ main{
     overflow-y: auto;
     height: calc(100vh - 79px); /*navbar offset*/
     margin-top: 79px;
+    line-height: 1.8em;
 }
 
 nav .fa-bars{
@@ -70,7 +71,7 @@ nav .container{
     border-radius: 15px;
     padding: 30px;
     background-color: #B5DDFF;
-    line-height: 1.8em;
+    
 }
 
 .card:first-child{
@@ -125,25 +126,58 @@ nav .container{
     flex-direction: column;
     gap: 35px;
     padding: 60px 0;
+    color: white;
+}
+
+.plan img{
+    width: 100%;
+}
+
+.plan div:first-child img{
+    padding-bottom: 80px;
+}
+
+
+.plan div:first-child strong{
+    display: block;
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom: 50px;
 }
 
 .plan > div{
-    height: 500px;
-    border: dashed 1px red;
-    text-align: center;
-    color: white;
+    /* height: 500px; */
+    /* border: dashed 1px red; */
+    /* text-align: center; */
+    
     /* test */
 }
 
 .plan > div div{
-    height: 50%;
-    border: dashed 1px black;
+    /* height: 50%; */
+    /* border: dashed 1px black; */
     /* test */
 }
 
-.plan > div:last-child{
+.card-wht{
     background-color: white;
+    border-radius: 25px;
+    padding: 25px;
     color: black;
+    text-align: center;
+}
+
+.card-wht strong{
+    font-size: 23px;
+    padding-bottom: 25px;
+}
+
+.card-wht .fa-solid{
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #9792E4;
+    margin-top: 35px;
 }
 
 /* testimonials */
@@ -250,6 +284,15 @@ footer{
         width: calc(100% / 3 * 2 - 25px);
     }
 
+    /* planning */
+    .plan{
+        padding: 130px 0 60px;
+    }
+
+    .plan div:first-child strong{
+        font-size: 68px;
+    }
+
     /* testimonials */
     .testimonial{
         flex-direction: row;
@@ -327,22 +370,24 @@ footer{
         align-self: flex-end;
     }
 
-    .card:first-child div{
-        /* height: 100%; */
-        /* width: 50%; */
-        /* test */
-    }
-
     /* planning */
     .plan{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: flex-end;
+    }
+
+    .plan div:first-child strong{
+        font-size: 23px;
     }
 
     .plan > div{
-        width: 450px;
-        /* test */
+        max-width: calc(100% / 2 - 200px);
+    }
+
+    .card-wht img{
+        max-width: 250px;
     }
 
     /* benefit */

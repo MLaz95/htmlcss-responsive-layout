@@ -86,7 +86,7 @@ nav .container{
     
 }
 
-.card strong{
+.card h3{
     font-size: 24px;
     color: #0084FD;
 }
@@ -138,25 +138,11 @@ nav .container{
 }
 
 
-.plan div:first-child strong{
+.plan h2{
     display: block;
     font-size: 32px;
     font-weight: bold;
     padding-bottom: 50px;
-}
-
-.plan > div{
-    /* height: 500px; */
-    /* border: dashed 1px red; */
-    /* text-align: center; */
-    
-    /* test */
-}
-
-.plan > div div{
-    /* height: 50%; */
-    /* border: dashed 1px black; */
-    /* test */
 }
 
 .card-wht{
@@ -167,8 +153,8 @@ nav .container{
     text-align: center;
 }
 
-.card-wht strong{
-    font-size: 23px;
+.card-wht h3{
+    font-size: 24px;
     padding-bottom: 25px;
 }
 
@@ -189,8 +175,7 @@ nav .container{
     padding: 65px 0;
 }
 
-.testimonials strong{
-    display: block;
+.testimonials h2{
     padding: 40px 0;
     font-size: 30px;
     font-weight: bold;
@@ -224,7 +209,16 @@ nav .container{
 }
 
 /* benefits */
-.benefits{
+
+.benefits h2{
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 70px;
+    color: white;
+}
+
+.flex-container{
     display: flex;
     flex-direction: column;
 
@@ -235,6 +229,11 @@ nav .container{
 .benefit{
     height: 400px;
     /* test */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    padding: 50px 30px 30px;
 
     background-color: white;
 }
@@ -302,7 +301,7 @@ footer{
         padding: 130px 0 60px;
     }
 
-    .plan div:first-child strong{
+    .plan h2{
         font-size: 68px;
     }
 
@@ -391,7 +390,7 @@ footer{
         align-items: flex-end;
     }
 
-    .plan div:first-child strong{
+    .plan h2{
         font-size: 23px;
     }
 
